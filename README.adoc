@@ -3,22 +3,11 @@
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de Baptiste : baptiste.besson@etu.univ-tlse2.fr [Baptiste Besson].
 
 == TP1
 
 Feature: Is it Friday yet?
-
-#   Scenario: Sunday isn't Friday
-#     Given today is Sunday
-#     When I ask whether it's Friday yet
-#     Then I should be told "Nope"
-
-    
-#   Scenario: Friday is Friday
-#     Given today is Friday
-#     When  I ask whether it's Friday yet
-#     Then  I should be told "TGIF"
 
   Scenario Outline: Sunday isn't Friday
     Given today is "<day>"
@@ -32,6 +21,6 @@ Feature: Is it Friday yet?
         | Sunday         | Nope   |
         | anything else! | Nope   |
 
-fin tp1.PNG
+image::fin tp1.png['TP1']
 
 == TP2...
