@@ -21,6 +21,6 @@ Feature: Is it Friday yet?
         | Sunday         | Nope   |
         | anything else! | Nope   |
 
-image::fin_tp1.png['TP1']
+image::fin_tp1.PNG['TP1']
 
 == TP2...
