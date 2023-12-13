@@ -24,3 +24,36 @@ Feature: Is it Friday yet?
 image::fin_tp1.PNG['TP1']
 
 == TP2...
+fichier Order.java :
+
+public class Order {
+    private String owner;
+    
+    private String target;
+
+    private List<String> cocktails = new ArrayList<String>();
+
+    private String message;
+
+    public void declareOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public void declareTarget(String target) {
+        this.target = target;
+    }
+
+    public List<String> getCocktails() {
+        return this.cocktails;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return "From " + this.owner + " to " + this.target + ": " + this.message;
+    }
+}
+
+image::fin_tp2.PNG['TP2']
