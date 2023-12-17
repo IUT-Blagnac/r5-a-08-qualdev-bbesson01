@@ -1,6 +1,10 @@
 package hellocucumber;
 
 import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Assertions.*;
 
@@ -18,11 +22,11 @@ public class StepDefinitions {
     public void theScenarioPasses() {
     }
 
+    public String day= "";
 
     static String isItFriday(String today) {
-        return "Friday".equals(today) ? "TGIF" : "Nope";
+        return today.equals("Friday") ? "TGIF" : "Nope";
     }
-    public String day;
 
     @Given("today is {string}")
     public void today_is_sunday(String string) {
@@ -32,8 +36,8 @@ public class StepDefinitions {
     public void i_ask_whether_it_s_friday_yet() {
     }
     @Then("I should be told {string}")
-    public String i_should_be_told(String string) {
-        return "Nope";
+    public void i_should_be_told(String string) {
+        assertEquals(string, isItFriday(day));
     }
 
 
