@@ -68,3 +68,10 @@ Documentation améliorée (cucumber en ligne de commande) :
 
 image::TP4.1.PNG['TP4.1']
 image::TP4.PNG['TP4']
+
+
+Documentation améliorée (cukedoctor) :
+
+image::TP4-doc.1.PNG['TP4-cukedoctor1']
+image::TP4-doc.2.PNG['TP4-cukedoctor2']
+image::TP4-doc.3.PNG['TP4-cukedoctor3']
